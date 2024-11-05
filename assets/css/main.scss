@@ -7,3 +7,38 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+html {
+  font-size: 20px; // change to whatever
+
+  @include breakpoint($medium) {
+    font-size: 16px; // change to whatever
+  }
+
+  @include breakpoint($large) {
+    font-size: 15px; // change to whatever
+  }
+
+  @include breakpoint($x-large) {
+    font-size: 15px; // change to whatever
+  }
+
+  @media (max-width: 1279px) {
+    .sidebar-ads {
+        display: none;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    .speak-friend {
+      display: none;
+    }
+  }
+}
+//https://github.com/mmistakes/minimal-mistakes/issues/1219
+//https://github.com/mmistakes/minimal-mistakes/issues/1184
+//https://github.com/mmistakes/minimal-mistakes/discussions/1352
+
+ins.adsbygoogle {
+  border-bottom: none !important;
+}
