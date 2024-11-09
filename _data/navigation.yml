@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "About"
-    url: "localhost:4000"
+    url: /about/
   - title: "Articles"
     url: /year-archive/
   - title: "Categories"
